@@ -1,0 +1,23 @@
+<div class="jumbotron bg-white">
+    <h1 class="display-3">Covid 19 Info</h1>
+    <hr>
+   
+    <app-dashboard [totalDeath]='totalDeath' [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered'></app-dashboard>
+</div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <google-chart [data]="pieChart"></google-chart>
+        </div> 
+        <div class="col-sm-6">
+            <google-chart [data]="dashboardTable"></google-chart>
+        </div>
+        <div class="col-sm-6">
+            <google-chart [data]="pieChart"></google-chart>
+        </div> 
+    </div>
+
+<!-- <h1>{{totalRecovere}}</dh1>
+<h1>{{totalDeath}}</h1>
+<h1>{{totalActive}}</h1>
+<h1>{{totalConfirmed}}</h1> -->

@@ -1,0 +1,13 @@
+<div class="conatiner jumbotron bg-white">
+    <h1 class="display-3">Covid 19 Countries</h1>
+    <hr>
+    <div class="mx-auto">
+        <div class="form-group col-lg-5 mx-auto">
+            <label for="c"></label>
+            <select name="" id="c" #input class="form-control" (change)='updateValues(input.value)'>
+                <option  value="{{con}}" *ngFor='let con of countries'>{{con}}</option>
+            </select>
+        </div>
+    </div>
+    <app-dashboard [totalDeath]='totalDeath' [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered'></app-dashboard>
+</div>
